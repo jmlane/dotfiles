@@ -31,6 +31,7 @@ else export PS1="\[${COLOUR_GREEN}\]\w \\$ \[${COLOUR_NC}\]"; fi
 # ETC
 # After each command, checks the windows size and changes lines and columns
 shopt -s checkwinsize
-export EDITOR='vim'
+export EDITOR=vim
 if [ -z `which mvim` ]; then alias gvim=mvim; fi # MacVim in lieu of GVim
-export VISUAL='gvim'
+export VISUAL=gvim
+export PAGER=less
