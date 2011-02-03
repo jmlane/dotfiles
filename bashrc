@@ -28,10 +28,9 @@ export SUDO_PS1="\[${COLOUR_RED}\]\w \\$ \[${COLOUR_NC}\]"
 if [ $(id -u) -eq 0 ]; then export PS1=${SUDO_PS1};
 else export PS1="\[${COLOUR_GREEN}\]\w \\$ \[${COLOUR_NC}\]"; fi
 
-# ETC
-# After each command, checks the windows size and changes lines and columns
 shopt -s checkwinsize
 export PAGER=less
-[ `type -P vim &>/dev/null` ] && export EDITOR=vim
-[ `type -P gvim &>/dev/null` ] && export VISUAL=gvim
-[ `type -P mvim &>/dev/null` ] && alias gvim=mvim
+export EDITOR=vi
+`type -P vim &>/dev/null` && export EDITOR=vim
+`type -P gvim &>/dev/null` && export VISUAL=gvim
+`type -P mvim &>/dev/null` && alias gvim=mvim
