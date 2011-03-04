@@ -34,3 +34,6 @@ export EDITOR=vi
 `type -P vim &>/dev/null` && export EDITOR=vim
 `type -P mvim &>/dev/null` && alias gvim=mvim # Prefer MacVim over GVim
 `type -p gvim &>/dev/null` && export VISUAL=gvim
+
+# LOCAL RUN COMMANDS
+if [ -f ~/.bashrc_local ]; then source ~/.bashrc_local; fi

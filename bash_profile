@@ -8,4 +8,3 @@ if [ -d ~/bin ]; then export PATH=~/bin:${PATH}; fi
 
 # RUN COMMANDS
 if [ -f ~/.bashrc ]; then source ~/.bashrc; fi
-if [ -f ~/.bashrc_local ]; then source ~/.bashrc_local; fi
