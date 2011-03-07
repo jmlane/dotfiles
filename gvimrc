@@ -1,9 +1,7 @@
-" .gvimrc settings
-" Hide the toolbar
 set guioptions-=T
+set bg=dark
 
-" Dark background variant
-set background=dark
-
-" Background tweak for improved visibility
-hi Normal guibg=Grey8
+" Custom colorscheme
+if filereadable(expand("$HOME/.vim/colors/ir_black.vim"))
+  colorscheme ir_black
+endif
