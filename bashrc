@@ -25,8 +25,10 @@ export COLOUR_LIGHT_GRAY='\e[0;37m'
 
 # PROMPTS
 export SUDO_PS1="\[${COLOUR_RED}\]\w \\$ \[${COLOUR_NC}\]"
-if [ $(id -u) -eq 0 ]; then export PS1=${SUDO_PS1};
-else export PS1="\[${COLOUR_GREEN}\]\w \\$ \[${COLOUR_NC}\]"; fi
+if [ $(id -u) -eq 0 ]
+	then export PS1=${SUDO_PS1}
+	else export PS1="\[${COLOUR_GREEN}\]\w \\$ \[${COLOUR_NC}\]"
+fi
 
 shopt -s checkwinsize
 export PAGER=less
@@ -36,4 +38,4 @@ export EDITOR=vi
 `type -p gvim &>/dev/null` && export VISUAL=gvim
 
 # LOCAL RUN COMMANDS
-if [ -f ~/.bashrc_local ]; then source ~/.bashrc_local; fi
+[ -f ~/.bashrc_local ] && source ~/.bashrc_local
