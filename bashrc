@@ -30,6 +30,10 @@ if [ $(id -u) -eq 0 ]
 	else export PS1="\[${COLOUR_GREEN}\]\w \\$ \[${COLOUR_NC}\]"
 fi
 
+# HISTORY
+shopt -s histappend
+export HISTCONTROL=ignoredups
+
 shopt -s checkwinsize
 export PAGER=less
 export EDITOR=vi
