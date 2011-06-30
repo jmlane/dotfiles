@@ -30,7 +30,7 @@ shopt -s checkwinsize
 export PAGER=less
 export EDITOR=vi
 `type -P vim &>/dev/null` && export EDITOR=vim
-`type -p gvim &>/dev/null` && export VISUAL='gvim -f'
+`type -P gvim &>/dev/null` && export VISUAL='gvim -f'
 
 # LOCAL RUN COMMANDS
 [ -f ~/.bashrc_local ] && source ~/.bashrc_local
