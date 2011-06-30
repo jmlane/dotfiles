@@ -1,0 +1,15 @@
+# XTERM* TITLE
+case $TERM in
+  xterm*)
+    TITLE='\033]0;$USER@$HOSTNAME:$PWD\007'
+    ;;
+  *)
+    TITLE=''
+    ;;
+esac
+export PROMPT_COMMAND="echo -ne \"$TITLE\""
+
+# ALIASES
+alias ls='ls -p'
+# RVM
+alias rvm='[ -s /usr/local/rvm/scripts/rvm ] && unalias rvm && source /usr/local/rvm/scripts/rvm && echo "rvm: RVM loaded."'
