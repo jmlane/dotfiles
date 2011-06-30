@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # .BASHRC - jmlane@makeit.ca
 # For use with interactive shells only!
 [ -z "$PS1" ] && return

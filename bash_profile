@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # .BASH_PROFILE - jmlane@makeit.ca
 
 # Put local binaries in path before system binaries (Homebrew).
