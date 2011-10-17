@@ -1,10 +1,7 @@
 set lines=24 columns=80
 set guioptions-=T
-set bg=dark
-set transparency=10
-set guifont=Monaco:h12
 
-" Custom colorscheme
-if filereadable(expand("$HOME/.vim/colors/ir_black.vim"))
-  colorscheme ir_black
+" .gvimrc_local
+if filereadable(expand("$HOME/.gvimrc_local"))
+  source ~/.gvimrc_local
 endif

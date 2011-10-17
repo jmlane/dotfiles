@@ -1,0 +1,3 @@
+set bg=light
+colorscheme solarized
+set guifont=Monaco:h14
