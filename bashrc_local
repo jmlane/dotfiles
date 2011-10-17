@@ -12,5 +12,9 @@ export PROMPT_COMMAND="echo -ne \"$TITLE\""
 
 # ALIASES
 alias ls='ls -p'
+
+#export PAGER='col -bx | vim -Rc ":set nonu nolist" -'
+export GIT_EDITOR='mvim -f -c "au VimLeave * !open -a Terminal"'
+
 # RVM
 alias rvm='[ -s /usr/local/rvm/scripts/rvm ] && unalias rvm && source /usr/local/rvm/scripts/rvm && echo "rvm: RVM loaded."'
