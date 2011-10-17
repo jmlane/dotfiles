@@ -6,6 +6,7 @@ set nocompatible
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
+set modelines=0 " Avoid autorunning of malicious modelines.
 set number
 set showcmd
 set ruler
