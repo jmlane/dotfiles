@@ -1,3 +1,7 @@
+" Enable Pathogen by Tim Pope
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+call pathogen#infect()
+
 set nocompatible
 set number
 set showcmd
