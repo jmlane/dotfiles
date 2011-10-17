@@ -2,7 +2,7 @@
 # XTERM* TITLE
 case $TERM in
   xterm*)
-    TITLE='\033]0;$USER@$HOSTNAME:$PWD\007'
+    TITLE='\033]0;$USER@$HOSTNAME\007'
     ;;
   *)
     TITLE=''
