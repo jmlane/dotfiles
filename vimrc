@@ -7,6 +7,7 @@ set number
 set showcmd
 set ruler
 syntax on
+filetype plugin indent on
 
 set listchars=tab:»\ ,eol:¶,trail:·,nbsp:·
 
