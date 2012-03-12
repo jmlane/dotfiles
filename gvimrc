@@ -1,3 +1,4 @@
+colorscheme jmlane
 set lines=24 columns=80
 set guioptions-=T
 

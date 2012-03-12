@@ -2,6 +2,7 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
+colorscheme jmlane
 set nocompatible
 set number
 set showcmd
