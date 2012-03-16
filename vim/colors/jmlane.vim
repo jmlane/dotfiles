@@ -25,6 +25,7 @@ let colors_name = "jmlane"
 hi Normal	guifg=#F1F1F1 guibg=#000000
 hi NonText	guifg=#F1F1F1 guibg=#000000
 
+" Overridden defaults.
 hi Comment	term=bold cterm=NONE ctermfg=DarkBlue ctermbg=NONE gui=NONE guifg=#96CBFE guibg=NONE
 hi Constant	term=underline cterm=NONE ctermfg=DarkRed ctermbg=NONE gui=NONE guifg=#FF6C60 guibg=NONE
 hi Special	term=bold cterm=NONE ctermfg=DarkMagenta ctermbg=NONE gui=NONE guifg=#FF73FD guibg=NONE
@@ -37,6 +38,10 @@ hi Ignore	term=NONE cterm=NONE ctermfg=White ctermbg=NONE gui=NONE guifg=#EEEEEE
 hi Error	term=reverse cterm=NONE ctermfg=White ctermbg=Red gui=NONE guifg=#EEEEEE guibg=#FF6C60
 hi Todo		term=standout cterm=NONE ctermfg=Black ctermbg=Yellow gui=NONE guifg=#4E4E4E guibg=#FFFFB6
 
+" Custom changes.
+hi LineNr	guifg=#FFFFB6
+
+" Default highlight group links.
 hi link String		Constant
 hi link Character	Constant
 hi link Number		Constant
