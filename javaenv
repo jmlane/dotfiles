@@ -1,0 +1,9 @@
+#! /usr/bin/env bash
+# Java development environment shell wrapper
+jrc() {
+	local jver=$1
+	export JAVA_HOME=
+	export CLASSPATH=
+	export PS1="($jver) $PS1"
+}
+exec bash -i --rcfile <(echo "source ~/.bashrc && jrc")
