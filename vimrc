@@ -1,16 +1,18 @@
-" Enable Pathogen by Tim Pope
+" Vim settings over Vi.
+" Affects other configs, so goes first.
+set nocompatible
+
+" Enable Pathogen by Tim Pope.
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
-colorscheme jmlane
-set nocompatible
 set number
 set showcmd
 set ruler
+set listchars=tab:»\ ,eol:¶,trail:_,nbsp:·
+
 syntax on
 filetype plugin indent on
-
-set listchars=tab:»\ ,eol:¶,trail:·,nbsp:·
 
 " .vimrc_local
 if filereadable(expand("$HOME/.vimrc_local"))
