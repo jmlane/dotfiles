@@ -10,7 +10,6 @@ setlocal tabstop=4
 setlocal expandtab
 setlocal softtabstop=4
 setlocal shiftround
-setlocal nosmartindent
 
 " Syntax highlighting
 let b:python_highlight_all=1
