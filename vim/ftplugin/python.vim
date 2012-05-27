@@ -6,7 +6,9 @@ setlocal expandtab
 setlocal softtabstop=4
 setlocal shiftround
 
+" Disable mappings for plugins
+let g:no_pep8_maps
+let g:no_flake8_maps
 
-" Highlight EOL whitespace
-"highlight WhitespaceEOL ctermbg=darkred guibg=darkred
-"match WhitespaceEOL /\s\+$/
+" Run Python plugins automatically on save
+"autocmd BufWritePost *.py call Flake8()
