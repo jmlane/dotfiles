@@ -6,9 +6,7 @@ setlocal expandtab
 setlocal softtabstop=4
 setlocal shiftround
 
-" Syntax highlighting
-let b:python_highlight_all=1
 
 " Highlight EOL whitespace
-highlight WhitespaceEOL ctermbg=red guibg=red
-match WhitespaceEOL /\s\+$/
+"highlight WhitespaceEOL ctermbg=darkred guibg=darkred
+"match WhitespaceEOL /\s\+$/
