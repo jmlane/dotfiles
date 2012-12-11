@@ -1,0 +1,11 @@
+[user]
+	name = Jonathan M. Lane
+	email = jmlane@upei.ca
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[alias]
+	glog = log --decorate --graph --oneline
+[include]
+	path = .gitconfig_local
