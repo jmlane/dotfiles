@@ -1,6 +1,4 @@
-" Vim settings over Vi.
-" Affects other configs, so goes first.
-set nocompatible
+set nocompatible " No Vi mode. Effects other settings; first.
 
 " Enable Pathogen by Tim Pope.
 runtime bundle/vim-pathogen/autoload/pathogen.vim
